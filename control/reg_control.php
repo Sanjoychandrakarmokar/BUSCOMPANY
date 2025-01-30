@@ -210,7 +210,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         $insert=$mydb->insertemployees($conobj, 'regemp',$typeofwork, $name, $nid, $phone,$email,$address,$dob,$dlnumber,$higherdegree,$companyname,$jobtitle,$duration,$password);
         if( $insert)
         {
-            echo "Successful";
+            header("Location: ../view/login.php");
         }
         else{
             echo "Error".$insert;
