@@ -14,7 +14,6 @@ form {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
 }
 
 fieldset {
@@ -108,22 +107,22 @@ legend h3 {
 }
 
 
-button {
+#button {
     background: #007bff;
     color: white;
     transition: background 0.3s;
 }
 
-input[type="reset"] {
+#reset{
     background: #dc3545;
     color: white;
     transition: background 0.3s;
 }
 
-button:hover {
+#button:hover {
     background: #0056b3;
 }
 
-input[type="reset"]:hover {
+#reset:hover {
     background: #c82333;
 }

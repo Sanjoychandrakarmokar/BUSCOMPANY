@@ -79,9 +79,9 @@ include '../control/reg_control.php';
 
                     <tr>
                         <td>
-                        <button>Submit</button>
+                        <button id="button">Submit</button>
                         <!--<input type="Submit" name="submit" value="Submit ">-->
-                        <input type="reset" name="reset" value="Clear Form">
+                        <input type="reset" id="reset" name="reset" value="Clear Form">
                         </td>
                     </tr>
 
