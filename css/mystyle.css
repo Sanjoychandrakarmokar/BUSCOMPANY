@@ -1,23 +1,17 @@
-/* General Styles */
+/* Enhanced Styles for Employee Registration Form */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
+    padding: 20px;
+    margin: 0;
 }
 
 form {
-    background: #fff;
-    padding: 20px;
+    background: #ffffff;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
@@ -30,18 +24,17 @@ fieldset {
 
 legend h3 {
     margin: 0;
-    color: #444;
+    color: #007bff;
+    font-weight: bold;
 }
 
-table {
-    width: 100%;
+/* ID Selectors with Enhanced Visibility */
+#work {
+    border: 2px solid #007bff;
+    padding: 8px;
+    border-radius: 5px;
 }
 
-td {
-    padding: 8px 0;
-}
-
-/* ID Selectors */
 #name {
     border: 2px solid #007bff;
     padding: 8px;
@@ -112,4 +105,25 @@ td {
     border: 2px solid #007bff;
     padding: 8px;
     border-radius: 5px;
+}
+
+
+button {
+    background: #007bff;
+    color: white;
+    transition: background 0.3s;
+}
+
+input[type="reset"] {
+    background: #dc3545;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+input[type="reset"]:hover {
+    background: #c82333;
 }

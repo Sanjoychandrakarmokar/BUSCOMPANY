@@ -14,18 +14,18 @@ include '../control/reg_control.php';
     </head>
 
     <body>
-        <h1>Employees Registration</h1>
+        
         <form action="../control/reg_control.php" method="post" enctype="multipart/form-data" onsubmit="return validation()">
             <fieldset>
                 <legend>
-                    <h3>New Employees</h3>
+                    <h3>New Employees Registration</h3>
                 </legend>
                 <table>
                     <tr>
                     <td>Type of Work:</td>
-                    <td><input type="radio" id="Supervisor" name="work" value="Supervisor">Supervisor
-                    <input type="radio" id="Driver" name="work" value="Driver">Driver
-                    <input type="radio" id="Helper" name="work" value="Helper">Helper</td>
+                    <td><input type="radio" id="work" name="work" value="Supervisor">Supervisor
+                    <input type="radio" id="work" name="work" value="Driver">Driver
+                    <input type="radio" id="work" name="work" value="Helper">Helper</td>
                     <td><?php echo $typeofworkError; ?></td></tr> 
 
                     <tr><td>Name:</td><td><input type="text" id="name" name="name" ></td>
