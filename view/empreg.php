@@ -9,6 +9,8 @@ include '../control/reg_control.php';
             ABC BUS COMPANY
         </title>
         <script src="../js/validation.js"></script>
+        <link rel="stylesheet" href="../css/mystyle.css">
+
     </head>
 
     <body>

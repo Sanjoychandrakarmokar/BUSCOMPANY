@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+}
+
+legend h3 {
+    margin: 0;
+    color: #444;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 8px 0;
+}
+
+/* ID Selectors */
+#name {
+    border: 2px solid #007bff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#nid {
+    border: 2px solid #28a745;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#phone {
+    border: 2px solid #dc3545;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#email {
+    border: 2px solid #ffc107;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#address {
+    border: 2px solid #17a2b8;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#dob {
+    border: 2px solid #6c757d;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#dlnumber {
+    border: 2px solid #6610f2;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#higherdegree {
+    border: 2px solid #20c997;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#companyname {
+    border: 2px solid #e83e8c;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#jobtitle {
+    border: 2px solid #fd7e14;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#duration {
+    border: 2px solid #343a40;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#password {
+    border: 2px solid #007bff;
+    padding: 8px;
+    border-radius: 5px;
+}
