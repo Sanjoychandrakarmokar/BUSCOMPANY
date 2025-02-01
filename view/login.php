@@ -1,4 +1,4 @@
-<tr?php
+<?php
 include '../control/login_control.php';
 ?>
 

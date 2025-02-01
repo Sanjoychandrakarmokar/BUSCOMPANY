@@ -43,6 +43,27 @@ function login($conn,$table,$nid,$password)
     return $result;
 }
 
+function insertbusroutedetails($conn,$table,$source, $destination,$busnumber,$passengernumber,$date,$time)
+{
+$sqlstring="INSERT INTO $table (source,destination,busnumber,passengernumber,date,time) VALUES('$source','$destination','$busnumber','$passengernumber','$date','$time')";
+$result = $conn->query($sqlstring);
+if($result === false)
+{
+    return $conn->error;
+    
+}
+else{
+    return $result;
+}
+}
+
+
+function getAllRecords($conn, $table) {
+    $sqlstring = "SELECT * FROM $table";
+    $result = $conn->query($sqlstring);
+    return $result;
+}
+
 
 
 function closeCon($conn)
