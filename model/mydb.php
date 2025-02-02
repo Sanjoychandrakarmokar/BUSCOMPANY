@@ -36,12 +36,21 @@ else{
 
 
 
+
 function login($conn,$table,$nid,$password)
 {
     $sqlstring="SELECT * FROM $table WHERE Nid = '$nid'&& Password='$password' ";
     $result=$conn->query($sqlstring);
     return $result;
 }
+function getAllRecords($con, $table) {
+    $query = "SELECT * FROM $table";
+    $result = $con->query($query);
+    return $result;
+}
+
+
+
 
 function insertbusroutedetails($conn,$table,$source, $destination,$busnumber,$passengernumber,$date,$time)
 {
@@ -57,13 +66,21 @@ else{
 }
 }
 
-
-function getAllRecords($conn, $table) {
-    $sqlstring = "SELECT * FROM $table";
-    $result = $conn->query($sqlstring);
+function getUserdata($conn,$table,$nidse){
+    $qrystring="SELECT * FROM $table WHERE Nid = '$nidse'";
+    $result= $conn->query($qrystring);
     return $result;
 }
 
+function deletebusnumber($conn, $table, $busnumber) {
+    $qrystring = "DELETE FROM $table WHERE busnumber = '$busnumber'";
+    $result = $conn->query($qrystring);
+    if ($result === false) {
+        return $conn->error;  // Return the error if the deletion fails
+    } else {
+        return $result;  // Return true if the deletion is successful
+    }
+}
 
 
 function closeCon($conn)

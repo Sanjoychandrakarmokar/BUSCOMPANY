@@ -1,6 +1,5 @@
 <?php
 include '../model/mydb.php';
-
 $typeofworkError="";
 $nameError="";
 $nidnumberError="";

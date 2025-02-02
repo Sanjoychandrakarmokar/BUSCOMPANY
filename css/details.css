@@ -15,6 +15,29 @@ header {
     padding: 20px;
 }
 
+header div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Button Styling */
+button {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
 /* Company Info & Services Section */
 .company-info, .services {
     background: white;

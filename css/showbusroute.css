@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f7;
+}
+
+/* Header Styling */
+header {
+    background-color: #0056b3;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Button Styling */
+button {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Specific Button Styles */
+.updatrouteinfo {
+    background-color: #218838;
+}
+
+.updatrouteinfo:hover {
+    background-color: #1e7e34;
+}
+
+.deletebusrouteinfo {
+    background-color: #c82333;
+}
+
+.deletebusrouteinfo:hover {
+    background-color: #a71d2a;
+}
+
+.back {
+    background-color: #5a6268;
+}
+
+.back:hover {
+    background-color: #494f54;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}

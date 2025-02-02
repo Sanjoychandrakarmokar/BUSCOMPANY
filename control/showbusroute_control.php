@@ -6,9 +6,6 @@ $conobj= $mydb->createConObject();
 $insert=$mydb->getAllRecords($conobj, 'busroutedetails');
 
 
-
-echo "<h1 class='update_title'>Bus Route Details</h1>";
-echo "<h2 class='update-subtitle'>All Requests:</h2>";
 echo "<table class='request-table'>";
 echo "<thead>
 <tr>
@@ -39,28 +36,9 @@ if ($insert->num_rows > 0) {
         echo "<td>$time</td>";
     }
 } else {
-    echo "<tr><td colspan='8'>No records found</td></tr>";
+    echo "<tr><td>No records found</td></tr>";
 }
-
 echo "</tbody>";
 echo "</table>";
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Bus Route Details</title>
-    <link rel="stylesheet" href="../css/update.css">
-</head>
-
-<body>
-
-    <table>
-
-
-
-        
-    </table>
-</body>
-</html>

@@ -11,9 +11,9 @@ include '../control/home_control.php';
 <body>
     <header>
         <div class="header-container">
-            <button class="header-btn">Profile</button>
-            <button class="header-btn">Contact</button>
-            <button class="header-btn" onclick="window.location.href='../view/update.php';">Update</button>
+            <button class="header-btn" onclick="window.location.href='../view/profile.php';">Profile</button>
+            <button class="header-btn">View Al Employees</button>
+            <button class="header-btn" onclick="window.location.href='../view/showbusroute.php';">Show Bus Route Info</button>
             <button class="header-btn" onclick="window.location.href='../view/details.php';">Company Details</button>
 
         </div>

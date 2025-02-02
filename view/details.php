@@ -8,6 +8,9 @@
 <body>
     <header>
         <h1>Bus Company Details</h1>
+        <div>
+        <button class="back" onclick="window.location.href='../view/home.php';">Back</button>
+        </div>
     </header>
     <div class="company-info">
         <h2>Company Name: ABC Transport Ltd.</h2>

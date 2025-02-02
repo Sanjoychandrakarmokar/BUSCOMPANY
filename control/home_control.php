@@ -1,6 +1,12 @@
 <?php
+session_start();
 include '../model/mydb.php';
+if (!isset($_SESSION['nid'])) {
+    echo "Error: You must be logged in to submit bus information.";
+    header("Location:../view/home.php");
+}
 
+$nidse=$_SESSION["nid"];
 $sourceError="";
 $destinationError="";
 $busnumberError="";

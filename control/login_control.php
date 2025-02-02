@@ -6,12 +6,11 @@ if(isset($_POST["login"])){
 
     $nid=$_POST["nid"];
     $password=$_POST["password"];
-
     $mydb= new mydb();
     $conobj = $mydb->createConObject();
     $result = $mydb->login($conobj,'regemp',$nid,$password);
     if($result > 0){
-        //$data=$result->fetch_assoc();
+        $_SESSION["nid"] = $nidse;
         header("Location: ../view/home.php");
         
         /*if(password_verify($password,$data["password"])){
