@@ -50,6 +50,13 @@ function getAllRecords($con, $table) {
 }
 
 
+function getAllcustomer($con, $table) {
+    $query = "SELECT * FROM $table";
+    $result = $con->query($query);
+    return $result;
+}
+
+
 
 
 function insertbusroutedetails($conn,$table,$source, $destination,$busnumber,$passengernumber,$date,$time)
@@ -66,11 +73,12 @@ else{
 }
 }
 
-function getUserdata($conn,$table,$nidse){
-    $qrystring="SELECT * FROM $table WHERE Nid = '$nidse'";
-    $result= $conn->query($qrystring);
-    return $result;
-}
+function getUserdata($conn,$nid)
+    {
+      $sql="SELECT * FROM regemp WHERE Nid = '$nid'";
+      $result=$conn->query($sql);
+      return $result;
+    }
 
 function deletebusnumber($conn, $table, $busnumber) {
     $qrystring = "DELETE FROM $table WHERE busnumber = '$busnumber'";

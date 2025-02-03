@@ -1,12 +1,6 @@
 <?php
 session_start();
 include '../model/mydb.php';
-if (!isset($_SESSION['nid'])) {
-    echo "Error: You must be logged in to submit bus information.";
-    header("Location:../view/home.php");
-}
-
-$nidse=$_SESSION["nid"];
 $sourceError="";
 $destinationError="";
 $busnumberError="";
@@ -93,7 +87,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-
+    session_destroy();
+    session_commit();
+    setcookie("Nid", "", time() - 3600, "/");
+    header("Location: ../view/login.php");
+    exit();
 
 
 }

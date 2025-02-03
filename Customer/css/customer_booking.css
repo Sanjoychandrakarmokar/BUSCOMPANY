@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+ }
+ .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ h1 {
+    text-align: center;
+    color: #333;
+ }
+ fieldset {
+    border: none;
+ }
+ table {
+    width: 100%;
+    border-collapse: collapse;
+ }
+ table td {
+    padding: 10px;
+    vertical-align: top;
+ }
+ table td:first-child {
+    text-align: right;
+    color: #555;
+    font-weight: bold;
+    padding-right: 10px;
+ }
+ input[type="text"],
+ input[type="date"],
+ input[type="number"],
+ select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+ }
+ input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+ }
+ input[type="submit"]:hover {
+    background-color: #45a049;
+ }
+ .form-footer {
+    text-align: center;
+    margin-top: 20px;
+ }

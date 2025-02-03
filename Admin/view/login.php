@@ -1,7 +1,7 @@
 <?php
 include '../control/login_control.php';
 ?>
-
+ 
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,9 +11,9 @@ include '../control/login_control.php';
         <link rel="stylesheet" href="../css/login.css">
     </head>
     <tr>
-        
+       
         <form action="../control/login_control.php" method="post">
-        
+       
             <fieldset>
                     <h1>Log in</h1>
                 <table>
@@ -25,9 +25,11 @@ include '../control/login_control.php';
                         <input type="reset" id="reset" name="reset" value="Clear">
                         </td>
                     </tr>
+                   
+                <p class="register-text">Not registered? <a href="admin.php">Create an account</a></p>
                 </table>
             </fieldset>
-
+ 
         </form>
     </body>
 </html>

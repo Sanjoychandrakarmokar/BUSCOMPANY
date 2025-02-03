@@ -11,8 +11,7 @@ include '../control/home_control.php';
 <body>
     <header>
         <div class="header-container">
-            <button class="header-btn" onclick="window.location.href='../view/profile.php';">Profile</button>
-            <button class="header-btn">View Al Employees</button>
+            <button class="header-btn"onclick="window.location.href='../view/allcustomer.php';">View All Customer</button>
             <button class="header-btn" onclick="window.location.href='../view/showbusroute.php';">Show Bus Route Info</button>
             <button class="header-btn" onclick="window.location.href='../view/details.php';">Company Details</button>
 
@@ -45,6 +44,7 @@ include '../control/home_control.php';
                         <input type="reset" id="reset" name="reset" value="Clear Form">
                         </td>
                     </tr>
+                    <button type="submit" class="btn-logout">Logout</button>
                 </table>
 
             </div>

@@ -1,0 +1,96 @@
+/* Body and overall page styling */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+body h1 {
+    font-size: 32px;
+    color: #2E8B57;
+    margin-bottom: 10px;
+}
+
+form h2 {
+    font-size: 28px;
+    color: #397151;
+    margin-bottom: 20px;
+}
+
+/* Form container styling */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Error message container */
+.error-messages {
+    color: #d8000c;
+    font-size: 14px;
+    background-color: #f8d7da;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Form field styling */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+
+
+/* Button Styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2E8B57;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #228B22;
+}
+
+/* Link styling */
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    color: #2E8B57;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

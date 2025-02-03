@@ -10,7 +10,7 @@ if(isset($_POST["login"])){
     $conobj = $mydb->createConObject();
     $result = $mydb->login($conobj,'regemp',$nid,$password);
     if($result > 0){
-        $_SESSION["nid"] = $nidse;
+        $_SESSION["nid"] = $nid;
         header("Location: ../view/home.php");
         
         /*if(password_verify($password,$data["password"])){
